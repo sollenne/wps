@@ -1,0 +1,225 @@
+:root {
+  /**
+  ********************************
+  *
+  * WPS Color Variables
+  * Generated CSS vars via color maps in format --palette-name-shade
+  * e.g. --wps-blue-light, --wps-green-normal-active, etc.
+  *
+  ********************************
+  */
+  /** WPS Base Colors */
+  --wps-base-blue-50: #e6e9f3;
+  --wps-base-blue-100: #b1bcda;
+  --wps-base-blue-200: #8c9cc8;
+  --wps-base-blue-300: #576eaf;
+  --wps-base-blue-400: #3652a0;
+  --wps-base-blue-500: #042788;
+  --wps-base-blue-600: #04237c;
+  --wps-base-blue-700: #031c61;
+  --wps-base-blue-800: #02154b;
+  --wps-base-blue-900: #021039;
+  --wps-base-green-50: #f1fff7;
+  --wps-base-green-100: #d2fee5;
+  --wps-base-green-200: #bcfed8;
+  --wps-base-green-300: #9efdc6;
+  --wps-base-green-400: #8bfdbb;
+  --wps-base-green-500: #6efcaa;
+  --wps-base-green-600: #64e59b;
+  --wps-base-green-700: #4eb379;
+  --wps-base-green-800: #3d8b5e;
+  --wps-base-green-900: #2e6a47;
+  --wps-base-red-50: #f8ebec;
+  --wps-base-red-100: #e8c1c5;
+  --wps-base-red-200: #dda3a9;
+  --wps-base-red-300: #cd7982;
+  --wps-base-red-400: #c45f69;
+  --wps-base-red-500: #b53744;
+  --wps-base-red-600: #a5323e;
+  --wps-base-red-700: #812730;
+  --wps-base-red-800: #641e25;
+  --wps-base-red-900: #4c171d;
+  --wps-base-orange-50: #fff5e7;
+  --wps-base-orange-100: #ffe1b3;
+  --wps-base-orange-200: #ffd28f;
+  --wps-base-orange-300: #ffbe5c;
+  --wps-base-orange-400: #ffb13c;
+  --wps-base-orange-500: #ff9e0b;
+  --wps-base-orange-600: #e8900a;
+  --wps-base-orange-700: #b57008;
+  --wps-base-orange-800: #8c5706;
+  --wps-base-orange-900: #6b4205;
+  /** WPS Link Colors */
+  --wps-link-blue-50: #e7eef7;
+  --wps-link-blue-100: #b4cce6;
+  --wps-link-blue-200: #90b3da;
+  --wps-link-blue-300: #5d90c9;
+  --wps-link-blue-400: #3d7abe;
+  --wps-link-blue-500: #0d59ae;
+  --wps-link-blue-600: #0c519e;
+  --wps-link-blue-700: #093f7c;
+  --wps-link-blue-800: #073160;
+  --wps-link-blue-900: #052549;
+  --wps-link-violet-50: #efe8f5;
+  --wps-link-violet-100: #cdb8de;
+  --wps-link-violet-200: #b596cf;
+  --wps-link-violet-300: #9466b9;
+  --wps-link-violet-400: #7f48ab;
+  --wps-link-violet-500: #5f1a96;
+  --wps-link-violet-600: #561889;
+  --wps-link-violet-700: #43126b;
+  --wps-link-violet-800: #340e53;
+  --wps-link-violet-900: #280b3f;
+  /** WPS Neutral Colors */
+  --wps-wps-off-white: #fbf9f7;
+  --wps-wps-off-white-100: #f5efea;
+  --wps-wps-white: #ffffff;
+  --wps-wps-gray: #eceeef;
+  --wps-wps-gray-50: #eceeef;
+  --wps-wps-gray-100: #c3c9cc;
+  --wps-wps-gray-200: #a6afb3;
+  --wps-wps-gray-300: #7d8a90;
+  --wps-wps-gray-400: #64747b;
+  --wps-wps-gray-500: #3d515a;
+  --wps-wps-gray-600: #384a52;
+  --wps-wps-gray-700: #2b3a40;
+  --wps-wps-gray-800: #222d32;
+  --wps-wps-gray-900: #1a2226;
+  /** WPS App Colors */
+  --wps-app-blue-Light: #e6e9f3;
+  --wps-app-blue-light-hover: #d9dfed;
+  --wps-app-blue-light-active: #b1bcda;
+  --wps-app-blue-normal: #042788;
+  --wps-app-blue-normal-hover: #04237a;
+  --wps-app-blue-normal-active: #031f6d;
+  --wps-app-blue-dark: #031d66;
+  --wps-app-blue-dark-hover: #021752;
+  --wps-app-blue-dark-active: #02123d;
+  --wps-app-blue-darker: #010e30;
+  --wps-app-green-Light: #f1fff7;
+  --wps-app-green-light-hover: #e9fff2;
+  --wps-app-green-light-active: #d2fee5;
+  --wps-app-green-normal: #6efcaa;
+  --wps-app-green-normal-hover: #63e399;
+  --wps-app-green-normal-active: #58ca88;
+  --wps-app-green-dark: #53bd80;
+  --wps-app-green-dark-hover: #429766;
+  --wps-app-green-dark-active: #31714c;
+  --wps-app-green-darker: #27583b;
+  /** WPS Button Colors */
+  --wps-button-blue-normal: #042788;
+  --wps-button-blue-hovered: #031c61;
+  --wps-button-blue-active: #021039;
+  --wps-button-blue-focused: #042788;
+  --wps-button-blue-text: #ffffff;
+  --wps-button-green-normal: #3d8b5e;
+  --wps-button-green-hovered: #2e6a47;
+  --wps-button-green-active: #27583b;
+  --wps-button-green-focused: #3d8b5e;
+  --wps-button-green-text: #ffffff;
+  --wps-button-red-normal: #b53744;
+  --wps-button-red-hovered: #812730;
+  --wps-button-red-active: #641e25;
+  --wps-button-red-focused: #812730;
+  --wps-button-red-text: #ffffff;
+  --wps-button-outlined-normal: transparent;
+  --wps-button-outlined-hovered: #e6e9f3;
+  --wps-button-outlined-active: #b1bcda;
+  --wps-button-outlined-focused: transparent;
+  --wps-button-outlined-text: #042788;
+  --wps-button-outlined-border: #042788;
+  --wps-button-ghost-normal: transparent;
+  --wps-button-ghost-hovered: #eceeef;
+  --wps-button-ghost-active: #c3c9cc;
+  --wps-button-ghost-focused: #c3c9cc;
+  --wps-button-ghost-text: #2b3a40;
+  --wps-button-ghost-red-normal: transparent;
+  --wps-button-ghost-red-hovered: #f8ebec;
+  --wps-button-ghost-red-active: #e8c1c5;
+  --wps-button-ghost-red-focused: #f8ebec;
+  --wps-button-ghost-red-text: #b53744;
+  --wps-button-text-white: #ffffff;
+  --wps-button-background-disabled: #c3c9cc;
+  --wps-button-border-radius: 8px;
+  /** WPS Text Colors */
+  --wps-page-title-text-color: #384a52;
+  --wps-heding-text-color: #1a2226;
+  /**
+  ********************************
+  *
+  * WPS Font Variables
+  * Generated CSS vars via scss maps in format --var-prefix-key
+  * e.g. --wps-font-family-josefin-sans, etc.
+  *
+  ********************************
+  */
+  --wps-font-family-josefin-sans: Josefin Sans Variable, Roboto, sans-serif;
+  --wps-font-family-libre-franklin: Libre Franklin Variable, Roboto, sans-serif;
+  --wps-font-family-inter: Inter Variable, Roboto, sans-serif;
+  --wps-font-weight-100: 100;
+  --wps-font-weight-200: 200;
+  --wps-font-weight-300: 300;
+  --wps-font-weight-400: 400;
+  --wps-font-weight-500: 500;
+  --wps-font-weight-600: 600;
+  --wps-font-weight-700: 700;
+  --wps-font-weight-800: 800;
+  --wps-font-weight-900: 900;
+  /** WPS Heading Styles */
+  --wps-heading-font-family: Libre Franklin Variable, Roboto, sans-serif;
+  --wps-heading-margin-bottom: 0.75rem;
+  --wps-button-font-family: Libre Franklin Variable, Roboto, sans-serif;
+  --wps-button-font-weight: 700;
+  --wps-page-title-font-family: Josefin Sans Variable, Roboto, sans-serif;
+  --wps-page-title-font-weight: 700;
+  --wps-page-title-font-size: 4rem;
+  --wps-page-title-line-height: 4.5rem;
+  --wps-h1-font-weight: 600;
+  --wps-h1-font-size: 3rem;
+  --wps-h1-line-height: 3.25rem;
+  --wps-h2-font-weight: 600;
+  --wps-h2-font-size: 2rem;
+  --wps-h2-line-height: 2.25rem;
+  --wps-h3-font-weight: 600;
+  --wps-h3-font-size: 1.5rem;
+  --wps-h3-line-height: 1.75rem;
+  --wps-h4-font-weight: 500;
+  --wps-h4-font-size: 1.25rem;
+  --wps-h4-line-height: 1.5rem;
+  --wps-h5-font-weight: 600;
+  --wps-h5-font-size: 1rem;
+  --wps-h5-line-height: 1.25rem;
+  --wps-h6-font-weight: 600;
+  --wps-h6-font-size: 0.875rem;
+  --wps-h6-line-height: 1rem;
+}
+
+/* Josefin Sans */
+@font-face {
+  font-family: "Josefin Sans Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 700;
+  src: url(@fontsource-variable/josefin-sans/files/josefin-sans-latin-wght-normal.woff2) format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Libre Franklin */
+@font-face {
+  font-family: "Libre Franklin Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(@fontsource-variable/libre-franklin/files/libre-franklin-latin-wght-normal.woff2) format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Inter */
+@font-face {
+  font-family: "Inter Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(@fontsource-variable/inter/files/inter-latin-wght-normal.woff2) format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*# sourceMappingURL=wps.css.map */

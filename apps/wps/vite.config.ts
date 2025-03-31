@@ -6,7 +6,7 @@ export default defineConfig(() => ({
   root: __dirname,
   cacheDir: '../../node_modules/.vite/apps/wps',
   server: {
-    port: 4200,
+    port: 4444,
     host: 'localhost',
   },
   preview: {

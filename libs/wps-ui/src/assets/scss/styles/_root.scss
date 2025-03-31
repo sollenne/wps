@@ -1,0 +1,76 @@
+@use '../variables/prefix' as prefix;
+@use '../variables/colors' as colors;
+@use '../variables/typography' as typography;
+@use '../mixins/var-mixins' as var-mix;
+
+:root {
+
+  /**
+  ********************************
+  *
+  * WPS Color Variables
+  * Generated CSS vars via color maps in format --palette-name-shade
+  * e.g. --wps-blue-light, --wps-green-normal-active, etc.
+  *
+  ********************************
+  */
+
+  /** WPS Base Colors */
+  @include var-mix.generate-css-vars(colors.$base-blues, 'base-blue');
+  @include var-mix.generate-css-vars(colors.$base-greens, 'base-green');
+  @include var-mix.generate-css-vars(colors.$base-reds, 'base-red');
+  @include var-mix.generate-css-vars(colors.$base-oranges, 'base-orange');
+
+  /** WPS Link Colors */
+  @include var-mix.generate-css-vars(colors.$link-blues, 'link-blue');
+  @include var-mix.generate-css-vars(colors.$link-violets, 'link-violet');
+
+  /** WPS Neutral Colors */
+  @include var-mix.generate-css-vars(colors.$base-neutrals, 'wps');
+
+  /** WPS App Colors */
+  @include var-mix.generate-css-vars(colors.$wps-blues, 'app-blue');
+  @include var-mix.generate-css-vars(colors.$wps-greens, 'app-green');
+
+  /** WPS Button Colors */
+  @include var-mix.generate-css-vars(colors.$button-blue, 'button-blue');
+  @include var-mix.generate-css-vars(colors.$button-green, 'button-green');
+  @include var-mix.generate-css-vars(colors.$button-red, 'button-red');
+  @include var-mix.generate-css-vars(colors.$button-outline, 'button-outlined');
+  @include var-mix.generate-css-vars(colors.$button-ghost, 'button-ghost');
+  @include var-mix.generate-css-vars(colors.$button-ghost-red, 'button-ghost-red');
+
+  --#{prefix.$prefix}button-text-white: #{colors.$button-text-white};
+  --#{prefix.$prefix}button-background-disabled: #{colors.$button-background-disabled};
+  --#{prefix.$prefix}button-border-radius: #{colors.$button-border-radius};
+
+  /** WPS Text Colors */
+  --#{prefix.$prefix}page-title-text-color: #{colors.$wps-page-title-text-color};
+  --#{prefix.$prefix}heding-text-color: #{colors.$wps-heading-text-color};
+
+  /**
+  ********************************
+  *
+  * WPS Font Variables
+  * Generated CSS vars via scss maps in format --var-prefix-key
+  * e.g. --wps-font-family-josefin-sans, etc.
+  *
+  ********************************
+  */
+
+  @include var-mix.generate-css-vars(typography.$wps-font-families, 'font-family');
+  @include var-mix.generate-css-vars(typography.$wps-font-weights, 'font-weight');
+
+  /** WPS Heading Styles */
+  --#{prefix.$prefix}heading-font-family: #{typography.$heading-font-family};
+  --#{prefix.$prefix}heading-margin-bottom: #{typography.$heading-margin-bottom};
+  @include var-mix.generate-css-vars(typography.$wps-button, 'button');
+  @include var-mix.generate-css-vars(typography.$wps-page-title, 'page-title');
+  @include var-mix.generate-css-vars(typography.$wps-h1, 'h1');
+  @include var-mix.generate-css-vars(typography.$wps-h2, 'h2');
+  @include var-mix.generate-css-vars(typography.$wps-h3, 'h3');
+  @include var-mix.generate-css-vars(typography.$wps-h4, 'h4');
+  @include var-mix.generate-css-vars(typography.$wps-h5, 'h5');
+  @include var-mix.generate-css-vars(typography.$wps-h6, 'h6');
+
+}

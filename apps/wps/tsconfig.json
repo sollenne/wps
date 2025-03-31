@@ -3,6 +3,9 @@
   "include": [],
   "references": [
     {
+      "path": "../../libs/wps-ui"
+    },
+    {
       "path": "./tsconfig.app.json"
     },
     {

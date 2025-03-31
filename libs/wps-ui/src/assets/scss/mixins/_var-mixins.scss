@@ -1,0 +1,10 @@
+@use '../variables/prefix' as app-prefix;
+
+//   Dynamically generates css variables from a scss map
+//   @param $scss-map - a scss map of key/value pairs
+//   @param $var-prefix - variable prefix (e.g., 'base-blue')
+@mixin generate-css-vars($scss-map, $var-prefix) {
+  @each $key, $value in $scss-map {
+    --#{app-prefix.$prefix}#{$var-prefix}-#{$key}: #{$value};
+  }
+}

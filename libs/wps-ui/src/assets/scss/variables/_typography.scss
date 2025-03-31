@@ -1,0 +1,72 @@
+@use 'sass:map';
+
+$wps-font-families: (
+  'josefin-sans':     'Josefin Sans Variable, Roboto, sans-serif',
+  'libre-franklin':   'Libre Franklin Variable, Roboto, sans-serif',
+  'inter':            'Inter Variable, Roboto, sans-serif'
+);
+
+$wps-font-weights: (
+  '100':              100,
+  '200':              200,
+  '300':              300,
+  '400':              400,
+  '500':              500,
+  '600':              600,
+  '700':              700,
+  '800':              800,
+  '900':              900
+);
+
+$page-title-font-family:  map.get($wps-font-families, 'josefin-sans')   !default;
+$button-font-family:      map.get($wps-font-families, 'libre-franklin') !default;
+$heading-font-family:     map.get($wps-font-families, 'libre-franklin') !default;
+$heading-margin-bottom:   0.75rem !default;
+
+$wps-button : (
+  'font-family':       $button-font-family,
+  'font-weight':       map.get($wps-font-weights, '700'),
+);
+
+$wps-page-title : (
+  'font-family':       $page-title-font-family,
+  'font-weight':       map.get($wps-font-weights, '700'),
+  'font-size':         4rem,
+  'line-height':       4.5rem,
+);
+
+$wps-h1: (
+  'font-weight':       map.get($wps-font-weights, '600'),
+  'font-size':         3rem,
+  'line-height':       3.25rem,
+);
+
+$wps-h2: (
+  'font-weight':       map.get($wps-font-weights, '600'),
+  'font-size':         2rem,
+  'line-height':       2.25rem,
+);
+
+$wps-h3: (
+  'font-weight':       map.get($wps-font-weights, '600'),
+  'font-size':         1.5rem,
+  'line-height':       1.75rem,
+);
+
+$wps-h4: (
+  'font-weight':       map.get($wps-font-weights, '500'),
+  'font-size':         1.25rem,
+  'line-height':       1.5rem,
+);
+
+$wps-h5: (
+  'font-weight':       map.get($wps-font-weights, '600'),
+  'font-size':         1rem,
+  'line-height':       1.25rem,
+);
+
+$wps-h6: (
+  'font-weight':       map.get($wps-font-weights, '600'),
+  'font-size':         0.875rem,
+  'line-height':       1rem,
+);

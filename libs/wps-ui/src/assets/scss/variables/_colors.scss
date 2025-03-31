@@ -1,0 +1,188 @@
+@use 'sass:map';
+@use '../mixins/var-mixins' as colors;
+
+// Colors
+// --------------------------------------------------
+
+$base-blues: (
+  50:  #e6e9f3,
+  100: #b1bcda,
+  200: #8c9cc8,
+  300: #576eaf,
+  400: #3652a0,
+  500: #042788,
+  600: #04237c,
+  700: #031c61,
+  800: #02154b,
+  900: #021039,
+);
+
+$base-greens: (
+  50:  #f1fff7,
+  100: #d2fee5,
+  200: #bcfed8,
+  300: #9efdc6,
+  400: #8bfdbb,
+  500: #6efcaa,
+  600: #64e59b,
+  700: #4eb379,
+  800: #3d8b5e,
+  900: #2e6a47,
+);
+
+$base-reds: (
+  50:  #f8ebec,
+  100: #e8c1c5,
+  200: #dda3a9,
+  300: #cd7982,
+  400: #c45f69,
+  500: #b53744,
+  600: #a5323e,
+  700: #812730,
+  800: #641e25,
+  900: #4c171d,
+);
+
+$base-oranges: (
+  50:  #fff5e7,
+  100: #ffe1b3,
+  200: #ffd28f,
+  300: #ffbe5c,
+  400: #ffb13c,
+  500: #ff9e0b,
+  600: #e8900a,
+  700: #b57008,
+  800: #8c5706,
+  900: #6b4205,
+);
+
+$link-blues: (
+  50:  #e7eef7,
+  100: #b4cce6,
+  200: #90b3da,
+  300: #5d90c9,
+  400: #3d7abe,
+  500: #0d59ae,
+  600: #0c519e,
+  700: #093f7c,
+  800: #073160,
+  900: #052549,
+);
+
+$link-violets: (
+  50:  #efe8f5,
+  100: #cdb8de,
+  200: #b596cf,
+  300: #9466b9,
+  400: #7f48ab,
+  500: #5f1a96,
+  600: #561889,
+  700: #43126b,
+  800: #340e53,
+  900: #280b3f,
+);
+
+$base-neutrals: (
+  'off-white':        #fbf9f7,
+  'off-white-100':    #f5efea,
+  'white':            #ffffff,
+  'gray':             #eceeef,
+  'gray-50':          #eceeef,
+  'gray-100':         #c3c9cc,
+  'gray-200':         #a6afb3,
+  'gray-300':         #7d8a90,
+  'gray-400':         #64747b,
+  'gray-500':         #3d515a,
+  'gray-600':         #384a52,
+  'gray-700':         #2b3a40,
+  'gray-800':         #222d32,
+  'gray-900':         #1a2226,
+);
+
+$wps-blues: (
+  'Light':            map.get($base-blues, 50),
+  'light-hover':      #d9dfed,
+  'light-active':     map.get($base-blues, 100),
+  'normal':           map.get($base-blues, 500),
+  'normal-hover':     #04237a,
+  'normal-active':    #031f6d,
+  'dark':             #031d66,
+  'dark-hover':       #021752,
+  'dark-active':      #02123d,
+  'darker':           #010e30,
+);
+
+$wps-greens: (
+  'Light':            map.get($base-greens, 50),
+  'light-hover':      #e9fff2,
+  'light-active':     map.get($base-greens, 100),
+  'normal':           map.get($base-greens, 500),
+  'normal-hover':     #63e399,
+  'normal-active':    #58ca88,
+  'dark':             #53bd80,
+  'dark-hover':       #429766,
+  'dark-active':      #31714c,
+  'darker':           #27583b,
+);
+
+// Misc Button Colors
+$button-background-transparent:   transparent !default;
+$button-background-disabled:      map.get($base-neutrals, 'gray-100') !default;
+$button-text-white:               map.get($base-neutrals, 'white') !default;
+$button-border-radius:            8px !default;
+
+// TODO: deprecate these in favor of the new wps-blues?
+$button-blue: (
+  'normal':           map.get($wps-blues, 'normal'),
+  'hovered':          map.get($base-blues, 700),
+  'active':           map.get($base-blues, 900),
+  'focused':          map.get($wps-blues, 'normal'),
+  'text':             $button-text-white,
+);
+
+// TODO: deprecate these in favor of the new wps-greens?
+$button-green: (
+  'normal':           map.get($base-greens, 800),
+  'hovered':          map.get($base-greens, 900),
+  'active':           map.get($wps-greens, 'darker'),
+  'focused':          map.get($base-greens, 800),
+  'text':             $button-text-white,
+);
+
+$button-red: (
+  'normal':           map.get($base-reds, 500),
+  'hovered':          map.get($base-reds, 700),
+  'active':           map.get($base-reds, 800),
+  'focused':          map.get($base-reds, 700),
+  'text':             $button-text-white,
+);
+
+$button-outline: (
+  'normal':           $button-background-transparent,
+  'hovered':          map.get($base-blues, 50),
+  'active':           map.get($base-blues, 100),
+  'focused':          $button-background-transparent,
+  'text':             map.get($wps-blues, 'normal'),
+  'border':           map.get($wps-blues, 'normal'),
+);
+
+$button-ghost: (
+  'normal':           $button-background-transparent,
+  'hovered':          map.get($base-neutrals, 'gray-50'),
+  'active':           map.get($base-neutrals, 'gray-100'),
+  'focused':          map.get($base-neutrals, 'gray-100'),
+  'text':             map.get($base-neutrals, 'gray-700'),
+);
+
+$button-ghost-red: (
+  'normal':           $button-background-transparent,
+  'hovered':          map.get($base-reds, 50),
+  'active':           map.get($base-reds, 100),
+  'focused':          map.get($base-reds, 50),
+  'text':             map.get($button-red, 'normal'),
+);
+
+// Misc Typography Colors
+$wps-page-title-text-color: map.get($base-neutrals, 'gray-600') !default;
+$wps-heading-text-color:    map.get($base-neutrals, 'gray-900') !default;
+
